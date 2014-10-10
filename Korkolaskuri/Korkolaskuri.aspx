@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <h1>Korkolaskuri</h1>
     <div>
-    Syötä tiedetyt arvot, jätä yksi kohta valitsematta ja laskuri täyttää oikean arvon oikeaan kohtaan.
+    Syötä tiedetyt arvot, jätä yksi kohta täyttämättä ja laskuri täyttää oikean arvon oikeaan kohtaan. Jos kaikki arvot on täytetty, laskee laskuri koron määrän.
         <br /><br />
     Alkupääoma: <asp:TextBox ID="txtAlkupaaoma" runat="server"></asp:TextBox> &nbsp€
         <br /><br />
@@ -44,7 +44,7 @@
         </asp:Calendar>
         </div>
         <br /><br />
-    Koron määrä: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> &nbsp€
+    Koron määrä: <asp:TextBox ID="txtKorkomaara" runat="server"></asp:TextBox> &nbsp€
     <br /><br />
         <asp:Button ID="btnLaske" runat="server" Text="Laske" OnClick="btnLaske_Click" />
         <asp:Label ID="lblInfo" runat="server" />
